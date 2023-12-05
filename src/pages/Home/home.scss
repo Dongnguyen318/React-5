@@ -1,0 +1,70 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+.home-wrapper {
+  width: fit-content;
+  margin: 70px auto;
+  padding: 0px 20px;
+  display: flex;
+  column-gap: 40px;
+  user-select: none;
+  .todo-column {
+    width: 400px;
+    height: 560px;
+    border: 1px solid cadetblue;
+    .column-header {
+      display: flex;
+      justify-content: space-between;
+      background-color: cadetblue;
+      height: 80px;
+      padding: 10px;
+    }
+    .column-name {
+      background-color: transparent;
+      font-size: 18px;
+      font-weight: 800;
+      padding: 0px 10px;
+      &:focus {
+        background-color: white;
+      }
+    }
+    .column-delete-btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      padding: 10px;
+      &:hover {
+        background-color: white;
+      }
+    }
+    .column-main {
+      height: 420px;
+      padding: 10px;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      .task {
+        background-color: #ccc;
+        padding: 10px;
+        display: flex;
+        .task-name {
+          padding: 10px;
+        }
+      }
+    }
+    .column-footer {
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        background-color: cadetblue;
+      }
+    }
+  }
+  .btnAdd {
+    height: 80px;
+    padding: 0px 20px;
+  }
+}

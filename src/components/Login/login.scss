@@ -1,0 +1,24 @@
+/** @format */
+
+.login-wrapper {
+  background-color: aquamarine;
+  padding: 100%;
+  width: fit-content;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  h1 {
+    font-size: 30px;
+    margin-bottom: 30pxpx;
+  }
+  input {
+    padding: 10px;
+    border-radius: 100px;
+    border: 1px solid cadetblue;
+  }
+}
